@@ -43,7 +43,8 @@ const cardHTML = p => `
   <li class="card" data-id="${p.id}">
     <h3>${p.name}</h3>
     <p class="cat">${p.category}</p>
-    <p class="price">₹${p.price}</p>
+<p class="stock">${p.inStock ? "In stock" : "Out of stock"}</p>
+<p class="price">₹${p.price}</p>
     <button class="add" ${p.inStock ? "" : "disabled"}>
       <span class="plus">+</span> ${p.inStock ? "Add to cart" : "Out of stock"}
     </button>
