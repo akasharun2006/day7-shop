@@ -1,3 +1,9 @@
+// State stores the current app data.
+// render() updates the product grid, summary, filters, and cart UI.
+
+
+
+
 // ----- data (the same for everyone) -----
 const products = [
   { id: 101, name: "Teak Sofa", category: "living", price: 45000, inStock: true },
